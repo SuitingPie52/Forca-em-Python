@@ -3,6 +3,8 @@ import random
 cores = ["branco", "azul", "vermelho", "amarelo", "verde", "marrom", "bege", "roxo", "rosa", "cinza", "dourado",
          "preto"]
 
+animais = ["macaco", "anta", "cavalo", "burro", "cachorro", "gato"]
+
 item_aleatorio = random.choice(cores)
 palavra_escondida = '*' * len(item_aleatorio)
 erros = 0

@@ -1,4 +1,4 @@
-import random
+import randomimport random
 
 cores = ["branco", "azul", "vermelho", "amarelo", "verde", "marrom", "bege", "roxo", "rosa", "cinza", "dourado",
          "preto"]
@@ -10,13 +10,13 @@ palavra_escondida = '*' * len(item_aleatorio)
 erros = 0
 i = 0
 
-print("------ BEM VINDO AO JOGO DA FORCA !!! ------\n\nEscolha a quantidade de erros que você pode cometer:")
-total_de_erros = int(input(str))
+print("------ BEM VINDO AO JOGO DA FORCA !!! ------\n\n")
+total_de_erros = int(input("Escolha a quantidade de erros que você pode cometer: "))
 
 while erros < total_de_erros + 1 and palavra_escondida != item_aleatorio:
 
-    print("Forca:", palavra_escondida, "\n\nTente adivinhar uma letra:")
-    tentativa = input(str)
+    print("\n\nForca:", palavra_escondida, "\n\n")
+    tentativa = str(input("Tente adivinhar uma letra: "))
 
     indice = item_aleatorio.find(tentativa)
 
@@ -51,3 +51,4 @@ if erros > total_de_erros:
 elif palavra_escondida == item_aleatorio:
 
     print("\nVocê venceu !!! Parabéns :D\nA palavra era:", palavra_escondida)
+
